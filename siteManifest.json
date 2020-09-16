@@ -1,0 +1,326 @@
+{
+
+  "ashivaSpace" : {
+
+    "Server" : $_SERVER['DOCUMENT_ROOT'],      // <= SEE ASHIVASPACES.TXT in ashivaWorkshop
+    "Web" : https://'.$_SERVER['HTTP_HOST']
+  }
+
+
+  ^^^ $ServerSpace (ie. $SiteManifest['ashivaSpace']['Server']) replaces $_SERVER['DOCUMENT_ROOT'] all over the site.
+
+
+
+  "Site_Organisation" : {
+
+    "Organisation_Name" : "Scotia_Beauty",
+    "Domain_Name"  : "ScotiaBeauty.com",
+    "Company_Registration_Number" : "01888025",
+    "VAT_Number" : "916185517"
+  },
+
+
+
+  "Site_Contact" : {
+
+    "Address" : [
+
+      true,
+
+      {
+
+        "Address_1" : "Old Cwm",
+        "Address_2" : "Mainstone",
+        "Town" : "Bishops Castle",
+        "Province" : "Shropshire",
+        "Postcode" : "SY9 5NA",
+        "Country" : "UK"
+      }
+    ], 
+    
+    "Telephone" : [
+
+      true,
+
+      {
+
+        "International_Code" : "44",
+        "Regional_Code" : "01588",
+        "Local_Number" : "640090",
+
+        "OpenGraph_Phone_Number" : "+44(0)1588640090",
+        "Tel_Protocol" : "+441588640090",
+        "Telephone_Text" : "+44 (0)1588 640090"
+      }
+    ],
+
+    "Email" : "info@scotiabeauty.com",
+    "SMS" : false,
+    "Facebook_Messenger" : false,
+    "WhatsApp" : false
+  },
+
+
+  "Site_Social_Media" : {
+
+    "Social_Sitename" : "Scotia_Beauty",
+    "Social_Hashtag" : "#ScotiaBeauty",
+
+    "Facebook" : [
+
+      false,
+
+      {
+
+        "Facebook_Page" : false,
+        "Facebook_Group" : false,
+        "Facebook_Publisher" : false,
+        "Facebook_App_ID"  : false,
+        "Facebook_Admins" : {"" : false},
+        "Facebook_Editor" : false
+      }
+
+    ],
+
+    "Twitter" : [
+
+      false,
+
+      { 
+        
+        "Twitter_Site" : false,
+        "Twitter_Editor" : false
+      }
+
+    ],
+
+    "YouTube" : [
+
+    ],
+
+    "Instagram" : [
+
+    ],
+
+    "Pinterest" : [
+
+    ],
+
+    "Snapchat" : [
+
+    ]
+  },
+
+
+  "Site_Configuration" : {
+
+    "Active" : true,
+
+    "ads.txt" : [
+  
+      {
+        "Active" : false,
+        "Name" : "Scotia Beauty Ads.txt",
+        "Asset" : "/.assets/system/configuration/standards/ads/ads.json",
+        "URL" : "/ads.txt"
+      }
+    ],
+
+    "browserconfig.xml" : [
+  
+      {
+        "Active" : false,
+        "Name" : "Scotia Beauty BrowserConfig.xml",
+        "Asset" : "/.assets/system/configuration/standards/browserconfig/browserconfig.json",
+        "URL" : "/browserconfig.xml"
+      }
+    ],
+
+    "Dat" : [
+  
+      {
+        "Active" : false,
+        "Name" : "Scotia Beauty Dat",
+        "Asset" : "/.assets/system/configuration/standards/dat/dat.json",
+        "URL" : "/.well-known/dat"
+      }
+    ],
+
+    "humans.txt" : [
+  
+      {
+        "Active" : false,     // <= IF TRUE, AUTOMATICALLY INCLUDE THIS (??) : <= <link rel="author" href="http://domain/humans.txt" type="text/plain" />
+        "Name" : "Scotia Beauty Humans.txt",
+        "Asset" : "/.assets/system/configuration/standards/humans/humans.json",
+        "URL" : "/humans.txt"
+      }
+    ],
+
+    "robots.txt" : [
+  
+      {
+        "Active" : true,
+        "Name" : "Scotia Beauty Robots.txt",
+        "Asset" : "/.assets/system/configuration/standards/robots/robots.json",
+        "URL" : "/robots.txt"
+      }
+    ],
+
+    "security.txt" : [
+  
+      {
+        "Active" : false,
+        "Name" : "Scotia Beauty Security.txt",
+        "Asset" : "/.assets/system/configuration/standards/security/security.json",
+        "URL" : "/.well-known/security.txt"
+      }
+    ],
+
+    "sellers.json" : [
+  
+      {
+        "Active" : false,
+        "Name" : "Scotia Beauty Sellers.json",
+        "Asset" : "/.assets/system/configuration/standards/sellers/sellers.json",
+        "URL" : "/sellers.json"
+      }
+    ]
+  },
+
+
+  "Site_Legal" : { 
+
+    "Active" : false,
+
+    "Privacy_Policy" : {
+
+      "Active" : false,
+      "Type" : "Inline",
+      "Key" : ""
+    },
+
+    "Licences" : {
+
+      "Active" : false,
+      "Type" : "Asset",
+      "Key" : "/.assets/media/documents/"
+    },
+
+    "Copyright_Notice" : {
+
+      "Active" : false,
+      "Type" : "URL",
+      "Key" : "/"
+    },
+
+    "Terms_and_Conditions" : {
+
+      "Active" : false,
+      "Type" : "URL",
+      "Key" : "/"
+    },
+
+    "Disclaimers" : {
+
+      "Active" : false,
+      "Type" : "URL",
+      "Key" : "/"
+    },
+
+    "Complaints_and_Feedback" : {
+
+      "Active" : false,
+      "Type" : "URL",
+      "Key" : "/"
+    },
+
+    "Patents_and_Trademarks" : {
+
+      "Active" : false,
+      "Type" : "Inline",
+      "Key" : "/"
+    }
+  },
+
+
+  "Site_Data" : {
+    
+    "JSON_Linked_Data": {
+
+      "Ashiva_Organization" : {
+        
+        "@context": "http://schema.org",
+        "@type": "HealthAndBeautyBusiness",
+        "name": "Scotia Beauty",
+        "description": "Scotia Beauty specialises in private label nail products for the professional beauty market.",
+        "url": "https://scotiabeauty.com",
+
+        "identifier": {
+          
+          "@type": "PropertyValue",
+          "propertyID": "Company Number",
+          "value":  "01888025"
+        },
+
+        "vatID" : "916185517",
+
+        "foundingDate": "2010",
+        "founders": {
+ 
+          "@type": "Person",
+          "name": "Melanie Sharp"
+        },
+
+        "sameAs": [
+
+          "https://beta.companieshouse.gov.uk/company/06686356",
+          "http://data.companieshouse.gov.uk/doc/company/06686356",
+          "https://www.linkedin.com/company/scotia-beauty-supplies-limited"
+        ],
+
+        "logo": {
+        
+          "@type": "ImageObject",
+          "url": "https://scotiabeauty.com/.assets/theme/elements/graphics/logos/scotia-beauty-logo.png",
+          "width": 216,
+          "height": 60
+        },
+    
+        "contactPoint": {
+      
+          "@type": "ContactPoint",
+          "contactType": "Customer Service",
+          "telephone": "+44(0)1588640090",
+          "email": "info@scotiabeauty.com"
+        },
+
+        "openingHours": "Mo-Fr 09:00-18:00",
+
+        "currenciesAccepted": "GBP",
+        "paymentAccepted":"Cash, Credit Card",
+
+        "location": {
+        
+          "@type": "Place",
+              
+          "address": {
+                
+            "@type": "PostalAddress",
+            "streetAddress": "Old Cwm, Mainstone",
+            "addressLocality": "Bishops Castle",
+            "addressRegion": "Shropshire",
+            "postalCode": "SY9 5NA",
+            "addressCountry": "United Kingdom"
+          },
+
+          "geo": {
+                
+            "@type": "GeoCoordinates",
+            "latitude": "57.052",
+            "longitude": "-5.763"
+          }
+        }
+      }
+    }
+  }
+}
