@@ -722,6 +722,12 @@ N.B - A note about `Active` :
         "Active" : true,
         "Name" : "Scotia Beauty Site Manifest",
         "Asset" : "/.assets/system/build/site/site-manifest.json"
+
+        "CrossOrigin" : {
+
+          "Active" : true,
+          "CORS_Directive" : "use-credentials"
+        }
       }
     ],
 
