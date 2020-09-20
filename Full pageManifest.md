@@ -145,11 +145,25 @@ N.B - A note about `Active` :
           "element" : "link",
           "rel" : "icon",
           "href" : "/.assets/theme/elements/icons/favicon.svg",
-          "sizes" : "any",
+          "sizes" : ["any"], // <= Optional (?)
           "type" : "image/svg+xml"  // <= Optional
         } 
       },
+ 
+      {
+        "Active" : true,
+        "Icon" : "ICO Alternate Favicon",
 
+        "Element" : {
+
+          "element" : "link",
+          "rel" : "icon",
+          "alternate" : true             // <= Optional. But when present and TRUE, turns rel="icon" into rel="alternate icon"
+          "href" : "/favicon.ico",
+          "sizes" : [32, 48], // <= Optional (?)
+        } 
+      },
+      
       {
         "Active" : true,
         "Icon" : "Safari Mask Icon",  // <= MUST be SVG
