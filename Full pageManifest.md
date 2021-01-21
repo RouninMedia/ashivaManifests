@@ -860,6 +860,7 @@ N.B - A note about `Active` :
       // N.B. "Settings" : {} is the same as []
       // N.B. "Suspended_Directives" : [] is the same as []
       // N.B. "Accessed_By" : {} is the same as []
+      // N.B. "Minify" : {} is the same as []
 
       "Ashiva": {
               
@@ -888,7 +889,7 @@ N.B - A note about `Active` :
 
         "SB_Restricted_Access::Safety_Data_Sheets" : [],
             
-        "SB_nextPage" : []
+        "SB_nextPage" : { "Minify": {"Active" : false, {"Markup": false, "Styles": false, "Scripts": false, "Vectors": true}} }
       }
     }
   }
