@@ -847,40 +847,29 @@ N.B - A note about `Active` :
     },
 
 
-    "ashivaModules": {
+    "da3shModules": {
 
-      "Active" : true,
+      "Active": true,
 
-      "accessSettings" : {"Default" : false},
+      "accessSettings": {"Default": false},
 
-      "Global" : { "Active" : true, "Namespace" : {"accessSettings" : {"Override" : true, "Default" : false}, "Accessed_By" : {"Ashiva_Control_Pad": false}} },
+      "Global": { "Active": true, "Namespace": {"accessSettings": {"Override": true, "Default": false}, "Accessed_By": {"Ashiva_Control_Pad": false}}},
+      
+      "Modules": [
 
-      // N.B. "Active" : true is the same as []
-      // N.B. "Order" : {"Level": 0} is the same as []
-      // N.B. "Settings" : {} is the same as []
-      // N.B. "Suspended_Directives" : [] is the same as []
-      // N.B. "Accessed_By" : {} is the same as []
-      // N.B. "Minify" : {} is the same as []
+        {"Publisher": "Ashiva", "Module": "Ashiva_Control_Pad"},
+      
+        {"Publisher": "AshivaStructuredData", "Module": "ashiva_Breadcrumbs"},
+        {"Publisher": "AshivaStructuredData", "Module": "ashiva_Organization"},
 
-      "Ashiva": {
-              
-        "Ashiva_Control_Pad" : []
-      },
-
-
-      "AshivaStructuredData": {
-
-        "ashiva_Breadcrumbs" : [],
-        "ashiva_Organization" : []
-      },
-
-      {"Publisher": "Scotia_Beauty", "Module": "SB_Body_Data", "Namespace": {"accessSettings": {"Default": false}, "Accessed_By" : {"SB_Colour_Charts": true}}},
-      {"Publisher": "Scotia_Beauty", "Module": "SB_Colour_Charts", "Namespace": {"accessSettings": {"Default": false}}},
-      {"Publisher": "Scotia_Beauty", "Module": "SB_Notice::Brexit" },
-      {"Publisher": "Scotia_Beauty", "Module": "SB_Translations", "Styles": {"apply": false}, "Scripts": {"apply": false}, "Namespace": {"accessSettings": {"Default": false}}},
-      {"Publisher": "Scotia_Beauty", "Module": "SB_Restricted_Access::Safety_Data_Sheets"},
-      {"Publisher": "Scotia_Beauty", "Module": "SB_nextPage", "Styles": {"minify": false}, "Scripts": {} {"Markup": false, "Styles": false, "Scripts": false, "Vectors": true}},
-      {"Publisher": "Scotia_Beauty", "Module": "SB_Consoles", "Styles": {"insert": {"after": "SB_nextPage"}}, "Scripts": {"insert": {"after": "SB_nextPage"}}}
+        {"Publisher": "Scotia_Beauty", "Module": "SB_Body_Data", "Namespace": {"accessSettings": {"Default": false}, "Accessed_By" : {"SB_Colour_Charts": true}}},
+        {"Publisher": "Scotia_Beauty", "Module": "SB_Colour_Charts", "Namespace": {"accessSettings": {"Default": false}}},
+        {"Publisher": "Scotia_Beauty", "Module": "SB_Notice::Brexit"},
+        {"Publisher": "Scotia_Beauty", "Module": "SB_Translations", "Styles": {"apply": false}, "Scripts": {"apply": false}, "Namespace": {"accessSettings": {"Default": false}}},
+        {"Publisher": "Scotia_Beauty", "Module": "SB_Restricted_Access::Safety_Data_Sheets"},
+        {"Publisher": "Scotia_Beauty", "Module": "SB_nextPage"},
+        {"Publisher": "Scotia_Beauty", "Module": "SB_Consoles", "Styles": {"insert": {"after": "SB_nextPage"}}, "Scripts": {"insert": {"after": "SB_nextPage"}}}
+      ]
     }
   }
 }
