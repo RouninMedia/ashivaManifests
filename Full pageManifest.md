@@ -853,7 +853,7 @@ N.B - A note about `Active` :
 
       "Settings" : {"AccessDefault" : false},
 
-      "Global" : { "Active" : true, "Namespace" : {"Settings" : {"Active": true, "AccessOverride" : true, "AccessDefault" : false}, "Accessed_By" : {"Ashiva_Control_Pad" : {"Active": true, "Access": false}}} },
+      "Global" : { "Active" : true, "Namespace" : {"Settings" : {"Active": true, "AccessOverride" : true, "AccessDefault" : false}, "Accessed_By" : {"Ashiva_Control_Pad": false}} },
 
       // N.B. "Active" : true is the same as []
       // N.B. "Order" : {"Level": 0} is the same as []
@@ -877,7 +877,7 @@ N.B - A note about `Active` :
 
       "Scotia_Beauty": {
 
-        "SB_Body_Data" : { "Active" : true, "Namespace": {"Settings" : {"Active": true, "AccessDefault" : false}, "Accessed_By" : {"SB_Colour_Charts" : {"Active": false, "Access": false}}} },
+        "SB_Body_Data" : { "Active" : true, "Namespace": {"Settings" : {"Active": true, "AccessDefault" : false}, "Accessed_By" : {"SB_Colour_Charts": false}} },
 
         "SB_Colour_Charts" : { "Active" : true, "Namespace": {"Settings": {"Active": true, "AccessDefault" : false}} },
               
