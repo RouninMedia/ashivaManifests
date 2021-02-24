@@ -853,7 +853,7 @@ N.B - A note about `Active` :
 
       "accessSettings": {"Default": false},
 
-      "Global": { "Active": true, "Namespace": {"accessSettings": {"Override": true, "Default": false}, "Accessed_By": {"Ashiva_Control_Pad": false}}},
+      "Global": { "Active": true, "Namespace": {"accessSettings": {"Override": true, "Default": false}, "Accessed_By": {"Ashiva_Control_Pad": true}}},
       
       "Modules": [
 
