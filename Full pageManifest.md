@@ -853,7 +853,7 @@ N.B - A note about `Active` :
 
       "Settings" : {"AccessDefault" : false},
 
-      "Global" : { "Active" : true, "Namespace" : {"Settings" : {"Active": true, "AccessOverride" : true, "AccessDefault" : false}, "Accessed_By" : {"Ashiva_Control_Pad": false}} },
+      "Global" : { "Active" : true, "Namespace" : {"Settings" : {"AccessOverride" : true, "AccessDefault" : false}, "Accessed_By" : {"Ashiva_Control_Pad": false}} },
 
       // N.B. "Active" : true is the same as []
       // N.B. "Order" : {"Level": 0} is the same as []
@@ -876,22 +876,16 @@ N.B - A note about `Active` :
 
       {"Publisher": "Scotia_Beauty", "Module": "SB_Body_Data" },
       {"Publisher": "Scotia_Beauty", "Module": "SB_Colour_Charts" },
-      {"Publisher": "Scotia_Beauty", "Module": "SB_Consoles", "Styles": {"insert": {"after": "SB_nextPage"}}, "Scripts": {"insert": {"after": "SB_nextPage"}}},
       {"Publisher": "Scotia_Beauty", "Module": "SB_Notice::Brexit" },
-      {"Publisher": "Scotia_Beauty", "Module": "SB_Translations" },
+      {"Publisher": "Scotia_Beauty", "Module": "SB_Translations", "Styles": {"apply": false}, "Scripts": {"apply": false}},
       {"Publisher": "Scotia_Beauty", "Module": "SB_Restricted_Access::Safety_Data_Sheets" },
       {"Publisher": "Scotia_Beauty", "Module": "SB_nextPage" },
+      {"Publisher": "Scotia_Beauty", "Module": "SB_Consoles", "Styles": {"insert": {"after": "SB_nextPage"}}, "Scripts": {"insert": {"after": "SB_nextPage"}}}
       
-      
-        
-      
-
-      "SB_Body_Data" : { "Namespace": {"Settings" : {"Active": true, "AccessDefault" : false}, "Accessed_By" : {"SB_Colour_Charts": false}} },
-      "SB_Colour_Charts" : { "Namespace": {"Settings": {"Active": true, "AccessDefault" : false}} },
-      "SB_Consoles" : { "Order": {"Active": true, "Level": 1} },
-      "SB_Notice::Brexit" : [],
-      "SB_Translations" : { "Active" : false, "Namespace": {"Settings": {"Active": true, "AccessDefault" : false}} },
-      "SB_Restricted_Access::Safety_Data_Sheets" : [],
+    
+      "SB_Body_Data" : { "Namespace": {"Settings" : {"AccessDefault" : false}, "Accessed_By" : {"SB_Colour_Charts": false}} },
+      "SB_Colour_Charts" : { "Namespace": {"Settings": {"AccessDefault" : false}} },
+      "SB_Translations" : { "Active" : false, "Namespace": {"Settings": {"AccessDefault" : false}} },
       "SB_nextPage" : { "Minify": {"Active" : false, {"Markup": false, "Styles": false, "Scripts": false, "Vectors": true}} }
     }
   }
