@@ -4,7 +4,7 @@ N.B - A note about `Active` :
   Many sections of the Manifest have an `Active` switch.
 
   1) If the section is PRESENT and the switch is TRUE, the section is ACTIVE
-  2) If the section is PRESENT and the switch is ABSENT, the section is ACTIVE (this should rarely happen outside "ashivaModules")
+  2) If the section is PRESENT and the switch is ABSENT, the section is ACTIVE (this should rarely happen)
 
   3) If the section is PRESENT and the switch is FALSE, the section is INACTIVE
   4) If the section is ABSENT, the section is INACTIVE
