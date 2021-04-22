@@ -7,7 +7,7 @@ N.B - A note about `Active` :
   2) If the section is PRESENT and the switch is ABSENT, the section is ACTIVE (this should rarely happen)
 
   3) If the section is PRESENT and the switch is FALSE, the section is INACTIVE
-  4) If the section is ABSENT, the section is INACTIVE
+  4) If the *section* is ABSENT, the section is INACTIVE
 
 ```
 {
@@ -857,18 +857,103 @@ N.B - A note about `Active` :
       
       "Modules": [
 
-        {"Publisher": "Ashiva", "Module": "Ashiva_Control_Pad"},
-      
-        {"Publisher": "AshivaStructuredData", "Module": "ashiva_Breadcrumbs"},
-        {"Publisher": "AshivaStructuredData", "Module": "ashiva_Organization"},
+        {
+          "Publisher": "Ashiva",
+          "Module": "Ashiva_Control_Pad",
+          "Active": true
+        },
+        
+        {
+          "Publisher": "AshivaStructuredData",
+          "Module": "ashiva_Breadcrumbs",
+          "Active": true
+        },
+        
+        {
+          "Publisher": "AshivaStructuredData",
+          "Module": "ashiva_Organization",
+          "Active": true
+        },
 
-        {"Publisher": "Scotia_Beauty", "Module": "SB_Body_Data", "Namespace": {"accessSettings": {"Default": false}, "Accessed_By" : {"SB_Colour_Charts": true}}},
-        {"Publisher": "Scotia_Beauty", "Module": "SB_Colour_Charts", "Namespace": {"accessSettings": {"Default": false}}},
-        {"Publisher": "Scotia_Beauty", "Module": "SB_Notice::Brexit"},
-        {"Publisher": "Scotia_Beauty", "Module": "SB_Translations", "Styles": {"apply": false}, "Scripts": {"apply": false}, "Namespace": {"accessSettings": {"Default": false}}},
-        {"Publisher": "Scotia_Beauty", "Module": "SB_Restricted_Access::Safety_Data_Sheets"},
-        {"Publisher": "Scotia_Beauty", "Module": "SB_nextPage"},
-        {"Publisher": "Scotia_Beauty", "Module": "SB_Consoles", "Styles": {"insert": {"after": "SB_nextPage"}}, "Scripts": {"insert": {"after": "SB_nextPage"}}}
+        {
+          "Publisher": "Scotia_Beauty",
+          "Module": "SB_Body_Data",
+          "Active": true,
+          
+          "Namespace": {
+            "accessSettings": {
+              "Default": false
+            },
+            
+            "Accessed_By" : {
+              "SB_Colour_Charts": true
+            }
+          }
+        },
+        
+        {
+          "Publisher": "Scotia_Beauty",
+          "Module": "SB_Colour_Charts",
+          "Active": true,
+          
+          "Namespace": {
+            "accessSettings": {
+              "Default": false
+            }
+          }
+        },
+        
+        {
+          "Publisher": "Scotia_Beauty",
+          "Module": "SB_Notice::Brexit",
+          "Active": true
+        },
+        
+        {
+          "Publisher": "Scotia_Beauty",
+          "Module": "SB_Translations",
+          "Active": true,
+          
+          "Styles": {
+            "apply": false
+          },
+          
+          "Scripts": {
+            "apply": false
+          },
+          
+          "Namespace": {
+            "accessSettings": {
+              "Default": false
+            }
+          }
+        },
+        
+        {
+          "Publisher": "Scotia_Beauty",
+          "Module": "SB_Restricted_Access::Safety_Data_Sheets",
+          "Active": true
+        },
+        
+        {
+          "Publisher": "Scotia_Beauty",
+          "Module": "SB_nextPage",
+          "Active": true
+        },
+        
+        {
+          "Publisher": "Scotia_Beauty",
+          "Module": "SB_Consoles",
+          "Active": true,
+          
+          "Styles": {
+            "insert": {"after": "SB_nextPage"}
+          },
+          
+          "Scripts": {
+            "insert": {"after": "SB_nextPage"}
+          }
+        }
       ]
     }
   }
