@@ -1,5 +1,5 @@
 
-N.B - A note about `Active` :
+N.B - A note about **the `Active` switch**:
 
   Many sections of the Manifest have an `Active` switch.
 
