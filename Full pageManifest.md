@@ -716,7 +716,7 @@ N.B - A note about ***the `Active` switch***:
   },
 
 
-  "Document_Architecture": {
+  "Document_Build": {
 
     "Minify" : false,     // <= If TRUE, this will MINIFY this document markup as part of the Flat File Stage
 
@@ -847,7 +847,7 @@ N.B - A note about ***the `Active` switch***:
     },
 
 
-    "danis3hModules": {
+    "Page_Modules": {
 
       "Active": true,
 
