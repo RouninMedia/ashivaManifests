@@ -158,7 +158,7 @@ N.B - A note about ***the `Active` switch***:
 
           "element" : "link",
           "rel" : "icon",
-          "alternate" : true             // <= Optional. But when present and TRUE, turns rel="icon" into rel="alternate icon" (Review this - is it actually spec?)
+          "alternate" : true,             // <= Optional. But when present and TRUE, turns rel="icon" into rel="alternate icon" (Review this - is it actually spec?)
           "href" : "/favicon.ico",
           "sizes" : [32, 48], // <= Optional (?)
         } 
