@@ -847,7 +847,7 @@ N.B - A note about ***the `Active` switch***:
     },
 
 
-    "da3shModules": {
+    "danis3hModules": {
 
       "Active": true,
 
