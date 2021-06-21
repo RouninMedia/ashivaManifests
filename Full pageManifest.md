@@ -40,7 +40,7 @@ N.B - A note about ***the `Active` switch***:
 
   "Meta_Information": {
   
-    "General" : {
+    "Web" : {
     
       "Title": "Scotia Beauty Nail Products - Private Label Nail Products",
       "Description": "Scotia Beauty - Private Label Nail Products",
