@@ -825,11 +825,11 @@ N.B - A note about ***the `Active` switch***:
 
       "Active" : true,
 
-      "Web_Manifest" : [        // <= More than one of these can be present. Any number (including all) can be FALSE. Only one can be TRUE.
+      "WebManifest" : [        // <= More than one of these can be present. Any number (including all) can be FALSE. Only one can be TRUE.
     
         {
           "Active" : true,
-          "Name" : "Scotia Beauty Web Manifest",
+          "Name" : "Scotia Beauty WebManifest",
           "Asset" : "/.assets/system/configuration/progressive-web-app/webmanifest/manifest.webmanifest",
           "URL" : "/manifest.webmanifest"
         }
