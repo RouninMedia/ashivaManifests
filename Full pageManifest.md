@@ -93,62 +93,6 @@ N.B - A note about ***the `Active` switch***:
       }
     },
 
-
-    "Resource_Hints" : {
-
-      "Active" : true,
-
-      "Preload" : {
-
-        "Active" : true,
-
-        "Directives" : [
-
-          {
-            "Active" : true,
-            "Preload": true,
-            "Type": "font/woff2",
-            "As": "font",
-            "Asset": "/.assets/theme/elements/fonts/scotia-beauty.woff2"
-          },
-      
-          {
-            "Active" : true,
-            "Preload": true,
-            "Type": "font/woff2",
-            "As": "font",
-            "Asset": "/.assets/theme/elements/fonts/scotia-beauty-logo.woff2"
-          }
-        ]
-      },
-
-      "Module_Preload" : {
-
-        "Active" : false,
-      },
-
-      "DNS_Prefetch" : {
-
-        "Active" : false,
-      },
-
-      "Preconnect" : {
-
-        "Active" : false,
-      },
-
-      "Prefetch" : {
-
-        "Active" : false,
-      },
-
-      "Prerender" : {
-
-        "Active" : false,
-      }
-    },
-
-
     "Icons" : [
 
       {
@@ -859,6 +803,58 @@ N.B - A note about ***the `Active` switch***:
           "URL" : "/serviceworker.js"
         }
       ]
+    },
+ 
+    "Resource_Hints" : {
+
+      "Active" : true,
+
+      "Preload" : {
+
+        "Active" : true,
+
+        "Resources" : [
+
+          {
+            "Active" : true,
+            "Type": "font/woff2",
+            "As": "font",
+            "Asset": "/.assets/theme/elements/fonts/scotia-beauty.woff2"
+          },
+      
+          {
+            "Active" : true,
+            "Type": "font/woff2",
+            "As": "font",
+            "Asset": "/.assets/theme/elements/fonts/scotia-beauty-logo.woff2"
+          }
+        ]
+      },
+
+      "Module_Preload" : {
+
+        "Active" : false,
+      },
+
+      "DNS_Prefetch" : {
+
+        "Active" : false,
+      },
+
+      "Preconnect" : {
+
+        "Active" : false,
+      },
+
+      "Prefetch" : {
+
+        "Active" : false,
+      },
+
+      "Prerender" : {
+
+        "Active" : false,
+      }
     },
 
 
