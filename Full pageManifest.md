@@ -869,13 +869,15 @@ N.B - A note about ***the `Active` switch***:
         },
         
         {
-          "Publisher": "AshivaStructuredData",
+          "Publisher": "Ashiva",
+          "Imprint": "Ashiva_Structured_Data",
           "Module": "ashiva_Breadcrumbs",
           "Active": true
         },
         
         {
-          "Publisher": "AshivaStructuredData",
+          "Publisher": "Ashiva",
+          "Imprint": "Ashiva_Structured_Data",
           "Module": "ashiva_Organization",
           "Active": true
         },
