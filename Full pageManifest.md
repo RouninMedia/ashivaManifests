@@ -46,9 +46,14 @@ N.B - A note about ***the `Active` switch***:
       "Description": "Scotia Beauty - Private Label Nail Products",
       "Keywords": ["scotia", "beauty", "private", "label", "nail", "products"],
       "Document_Language": ["en", "GB"],
-      "Document_Type" : "Article",
-      "Viewport" : {"initial-scale": "1.0"},
-      "Theme_Color": "rgb(178, 0, 87)" 
+      "Theme_Color": "rgb(178, 0, 87)",
+      
+      "Viewport" : {
+        "Active": true,
+        "Directives": {
+          "initial-scale": "1.0"
+        }
+      }
     },
 
 
@@ -75,6 +80,16 @@ N.B - A note about ***the `Active` switch***:
             "Height": "512",
           }
         ]
+      },
+      
+      "Channels": {
+
+        "Facebook": true,
+        "Twitter": true,
+        "YouTube": true,
+        "Instagram": true,
+        "Pinterest": true,
+        "Snapchat": true
       }
     },
 
