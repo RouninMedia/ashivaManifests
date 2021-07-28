@@ -271,7 +271,41 @@ N.B - A note about ***the `Active` switch***:
 
   "Document_Context": {
 
-    "Canonical_URL": "https://scotiabeauty.com/",
+    "Document" : {
+
+      "Section": "",
+
+      "Type": "article",
+
+      "Canonical": {
+
+        "Active": true,
+
+        "URL": "https://scotiabeauty.com/about-us/"
+      }
+    },
+    
+    "Robots" : {
+
+      "Active" : false,
+
+      "Directives" : ["index", "follow"]
+
+      /*
+      index
+      follow
+      noindex
+      nofollow
+      nosnippet
+      noimageindex
+      noarchive
+      notranslate
+      unavailable_after:[RFC 850 format]
+      max-snippet:[maximum number of characters / -1 for unlimited]
+      max-video-preview:[maximum number of seconds / -1 for unlimited]
+      max-image-preview:[none|standard|large]
+      */
+    },
 
     "Series": {
 
@@ -328,62 +362,31 @@ N.B - A note about ***the `Active` switch***:
       }
     },
 
-    "Robots" : {
-
-      "Active" : false,
-
-      "Directives" : ["index", "follow"]
-
-      /*
-      index
-      follow
-      noindex
-      nofollow
-      nosnippet
-      noimageindex
-      noarchive
-      notranslate
-      unavailable_after:[RFC 850 format]
-      max-snippet:[maximum number of characters / -1 for unlimited]
-      max-video-preview:[maximum number of seconds / -1 for unlimited]
-      max-image-preview:[none|standard|large]
-      */
-    },
-
-
-    "XML_Sitemap_Indexing" : {
+    "XML_Sitemaps" : {
 
       "Active" : true,
 
       "Content" : {
 
-        "Active" : true,                         // <= Only the Sitemaps relevant to this page are listed
+        "Active" : true,
 
-        "---" : {
-          "Active" : true,                      // <= Very rare for XML_Sitemap_Indexing/Content/--- to NOT be true
-          "Indexed" : true,
-          "Asset" : "/.assets/content/webrig/sitemaps/xml/content/sitemap.xml",
+        "Sitemap" : {
+          "Active" : true,
           "URL" : "/sitemap.xml"
         },
 
-        "en" : {
-          "Active" : true,
-          "Indexed" : true,
-          "Asset" : "/.assets/content/webrig/sitemaps/xml/content/en/sitemap.xml",
+        "Sitemap_EN" : {
+          "Active" : false,
           "URL" : "/sitemap-en.xml"
         },
 
-        "de" : {
-          "Active" : true,
-          "Indexed" : false,                   // <= Even though the sitemap is a) relevant and b) active, this page is not indexed in it 
-          "Asset" : "/.assets/content/webrig/sitemaps/xml/content/de/sitemap.xml", 
+        "Sitemap_DE" : {
+          "Active" : false, 
           "URL" : "/sitemap-de.xml"
         },
 
-        "es" : {
-          "Active" : false,                    // <= This shows that the sitemap is NOT being used currently, but if it were, this page is indexed in it
-          "Indexed" : true,
-          "Asset" : "/.assets/content/webrig/sitemaps/xml/content/es/sitemap.xml",
+        "Sitemap_ES" : {
+          "Active" : false,
           "URL" : "/sitemap-es.xml"
         }
       },
@@ -392,10 +395,8 @@ N.B - A note about ***the `Active` switch***:
 
         "Active" : false,
 
-        "---" : {
+        "Sitemap_Images" : {
           "Active" : false,
-          "Indexed" : false,
-          "Asset" : "/.assets/content/webrig/sitemaps/xml/images/sitemap_images.xml",
           "URL" : "/sitemap_images.xml"
         }
       },
@@ -404,10 +405,8 @@ N.B - A note about ***the `Active` switch***:
 
         "Active" : false,
 
-        "---" : {
+        "Sitemap_Videos" : {
           "Active" : false,
-          "Indexed" : false,
-          "Asset" : "/.assets/content/webrig/sitemaps/xml/videos/sitemap_videos.xml",
           "URL" : "/sitemap_videos.xml"
         }
       },
@@ -416,10 +415,8 @@ N.B - A note about ***the `Active` switch***:
 
         "Active" : false,
 
-        "---" : {
+        "Sitemap_News" : {
           "Active" : false,
-          "Indexed" : false,
-          "Asset" : "/.assets/content/webrig/sitemaps/xml/news/sitemap_news.xml",
           "URL" : "/sitemap_news.xml"
         }
       },
@@ -428,15 +425,12 @@ N.B - A note about ***the `Active` switch***:
 
         "Active" : false,
 
-        "---" : {
+        "Sitemap_Index" : {
           "Active" : false,
-          "Indexed" : false,
-          "Asset" : "/.assets/content/webrig/sitemaps/xml/sitemapindex/sitemap_index.xml",
           "URL" : "/sitemap_index.xml"
         }
       }
     },
-
 
     "Alternate": {
       
@@ -789,7 +783,7 @@ N.B - A note about ***the `Active` switch***:
         {
           "Active" : true,
           "Name" : "Scotia Beauty WebManifest",
-          "Asset" : "/.assets/system/configuration/progressive-web-app/webmanifest/manifest.webmanifest",
+          "Asset" : "/.assets/system/configuration/progressive-web-app/webmanifests/manifest--webmanifest.json",
           "URL" : "/manifest.webmanifest"
         }
       ],
@@ -799,7 +793,7 @@ N.B - A note about ***the `Active` switch***:
         {
           "Active" : true,
           "Name" : "Scotia Beauty Service Worker",
-          "Asset" : "/.assets/system/configuration/progressive-web-app/serviceworker/serviceworker.js",
+          "Asset" : "/.assets/system/configuration/progressive-web-app/serviceworkers/serviceworker.json",
           "URL" : "/serviceworker.js"
         }
       ]
