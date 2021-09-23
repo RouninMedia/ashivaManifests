@@ -4,7 +4,7 @@ N.B - A note about ***the `Active` switch***:
   Many sections of the Manifest have an `Active` switch.
 
   1) If the section is PRESENT and the switch is TRUE, the section is ACTIVE
-  2) If the section is PRESENT and the switch is ABSENT, the section is ACTIVE (this is rarely seen - with the possible exception of `Page_Modules`)
+  2) If the section is PRESENT and the switch is ABSENT, the section is ACTIVE (rarely seen - except, occasionally, in `Page_Modules`)
 
   3) If the section is PRESENT and the switch is FALSE, the section is INACTIVE
   4) If the *section* is ABSENT, the section is INACTIVE
